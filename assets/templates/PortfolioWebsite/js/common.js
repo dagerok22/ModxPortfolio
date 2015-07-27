@@ -26,7 +26,9 @@ $.fn.animationHandler = function(event, animation){
     	}, 650);
 	};
 
-
+setTimeout(function(){
+    $('html,body,section').css('opacity', 1);
+},1000);
 /////////////////////////
 
 $(document).ready(function() {
@@ -48,15 +50,10 @@ $(document).ready(function() {
 	$('.sectionDescription').animated("fadeInRight");
 	$('.statsText').animated("fadeInRight");
 	$('.stats>li').animated("slideInLeft");
-	$('.fa-heart').animationHandler("mouseover", "swing");
+	//$('.fa-heart').animationHandler("mouseover", "swing");
 	$('footer>img').animationHandler("click", "swing");
 /////////////////////////
 
-$('.firstSection').ready(function(){
-	$('html,body').css({
-		"opacity": "1"
-	});
-});
 
 /////////////////////////
 
